@@ -1,0 +1,3 @@
+[[sources]]
+id = "xxx"
+dns = "mysql://{username}:{password}@{host}:{port}/{db}"

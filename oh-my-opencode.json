@@ -1,0 +1,15 @@
+{
+    "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/refs/heads/dev/assets/oh-my-opencode.schema.json",
+    "tmux": {
+        "enabled": true,
+        "layout": "main-vertical",
+        "main_pane_size": 60,
+        "main_pane_min_width": 120,
+        "agent_pane_min_width": 40
+    },
+    "experimental": {
+        "auto_resume": true,
+        "task_system": true,
+        "preemptive_compaction": true
+    }
+}

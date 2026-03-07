@@ -1,0 +1,58 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "share": "disabled",
+  "instructions": ["./rules/*.md", "./rules/typescript/*.md"],
+  "mcp": {
+    "mcp-atlassian": {
+      "enabled": false,
+      "type": "remote",
+      "url": "http://localhost:9000/mcp",
+      "headers": {
+        "Authorization": "Token {cf token}"
+      }
+    },
+    "mastergo-magic-mcp": {
+      "enabled": false,
+      "type": "local",
+      "command": [
+        "bunx",
+        "-y",
+        "@mastergo/magic-mcp",
+        "--token={mastergo_token}",
+        "--url=https://{host}/"
+      ]
+    },
+    "mcp-dbhub": {
+      "enabled": false,
+      "type": "remote",
+      "url": "http://localhost:9002/mcp"
+    },
+    "mcp-redis": {
+      "enabled": false,
+      "type": "local",
+      "command": [
+        "docker",
+        "run",
+        "--rm",
+        "--name",
+        "redis-mcp-server",
+        "-i",
+        "-e",
+        "REDIS_HOST=192.168.8.94",
+        "-e",
+        "REDIS_PORT=19000",
+        // "-e",
+        // "REDIS_PWD=",
+        "-e",
+        "REDIS_SSL=false",
+        "mcp/redis:latest"
+      ]
+    },
+    "mcp-clickhouse": {
+      "enabled": false,
+      "type": "remote",
+      "url": "http://localhost:9001"
+    }
+  },
+  "plugin": ["oh-my-opencode", "claude-mem"]
+}
