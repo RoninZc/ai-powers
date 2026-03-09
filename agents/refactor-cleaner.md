@@ -1,6 +1,7 @@
 ---
 name: refactor-cleaner
 description: 死代码清理与整合专家。主动用于移除未使用代码、重复项和重构。运行分析工具（jsp、knip、depcheck、ts-prune）识别死代码并安全移除。
+mode: subagent
 ---
 
 # 重构与死代码清理器

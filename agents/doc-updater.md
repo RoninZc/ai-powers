@@ -1,6 +1,7 @@
 ---
 name: doc-updater
 description: 文档与代码映射图（Codemap）专家。主动用于更新代码映射图和文档。运行 /update-codemaps 和 /update-docs，生成 docs/CODEMAPS/*，更新 README 和指南（Guides）。
+mode: subagent
 ---
 
 # 文档与代码映射图专家（Documentation & Codemap Specialist）

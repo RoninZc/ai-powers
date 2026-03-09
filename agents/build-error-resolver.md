@@ -1,6 +1,7 @@
 ---
 name: build-error-resolver
 description: 构建与 TypeScript 错误修复专家。当构建失败或出现类型错误时，请主动（PROACTIVELY）使用。仅修复构建/类型错误，保持最小差异（diff），不进行架构性修改。重点是快速使构建通过（get the build green）。
+mode: subagent
 ---
 
 # 构建错误修复专家（Build Error Resolver）

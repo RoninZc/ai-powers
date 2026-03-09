@@ -1,5 +1,10 @@
 {
     "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/refs/heads/dev/assets/oh-my-opencode.schema.json",
+    "new_task_system_enabled": true,
+    "disabled_agents": [],
+    "browser_automation_engine": {
+        "provider": "agent-browser"
+    },
     "tmux": {
         "enabled": true,
         "layout": "main-vertical",
